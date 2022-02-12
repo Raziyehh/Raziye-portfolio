@@ -5,7 +5,7 @@
   --hover-color: #be234f;
 }
 
-body {
+body.homepage-background {
   background: url("/images/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -18,7 +18,7 @@ h2 {
   color: var(--font-color);
 }
 
-h1 {
+.homepage-h1 {
   font-size: 42px;
   line-height: 1.6;
   padding-top: 15px;
@@ -26,7 +26,7 @@ h1 {
   text-align: center;
 }
 
-h2 {
+.homepage-h2 {
   font-size: 30px;
   font-weight: 300;
   line-height: 1.3;
@@ -88,6 +88,12 @@ a:hover {
   font-size: 16px;
   margin-bottom: 5%;
   padding: 5px 25px;
+}
+
+body.about-page {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
 }
 
 @media (max-width: 575.98px) {
