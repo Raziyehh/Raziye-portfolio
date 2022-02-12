@@ -46,35 +46,43 @@
   </head>
   <body class="homepage-background">
     <nav class="navbar navbar-expand-md fixed-top navbar-dark">
-      <a class="navbar-brand active" href="#"
-        ><img
-          src="/images/White logo - no background.svg"
-          alt="logo"
-          class="navbar-logo img-gluid ms-5"
-      /></a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse me-5" id="navbarNav">
-        <ul class="navbar-nav me-5">
-          <li class="nav-item">
-            <a class="nav-link" href="#">About </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/images/White logo - no background.svg"
+            alt="logo"
+            class="navbar-logo img-fluid ms-5"
+          />
+        </a>
+        <button
+          class="navbar-toggler ms-5"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse me-5" id="navbarNav">
+          <ul class="navbar-nav ms-2">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <div class="container">
