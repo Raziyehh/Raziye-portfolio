@@ -168,6 +168,10 @@ article p {
   }
 }
 
+body.work-page {
+  background-color: #000;
+}
+
 @media (min-width: 576px) and (max-width: 767.98px) {
   .personal-pic {
     padding-top: 60px;
