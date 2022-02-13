@@ -2,7 +2,8 @@
   --bold-weight: 600;
   --light-weight: 300;
   --font-color: #fff;
-  --hover-color: #be234f;
+  --background-color: #000;
+  --light-color: rgba(255, 255, 255, 0.6);
 }
 
 body.homepage-background {
@@ -40,7 +41,16 @@ a {
 }
 
 a:hover {
-  color: var(--hover-color);
+  color: var(--font-color);
+}
+
+.btn {
+  border: 2px solid var(--font-color);
+}
+
+.btn:hover {
+  border: 2px dashed var(--font-color);
+  font-weight: var(--bold-weight);
 }
 
 .bold-weight {
@@ -91,13 +101,12 @@ a:hover {
 }
 
 body.about-page {
-  background-color: #000;
+  background-color: var(--background-color);
 }
 
 article h2 {
-  padding-top: 30px;
   margin: 0 25px;
-  padding-top: 100px;
+  padding-top: 200px;
   font-size: 30px;
   font-weight: 400;
   line-height: 1.6;
@@ -105,18 +114,85 @@ article h2 {
 
 article p {
   padding-top: 15px;
-  margin: 0 25px;
+  margin: 0 32px;
   font-size: 18px;
   font-weight: 300;
-  line-height: 1.6;
+  line-height: 1.8;
   color: var(--font-color);
 }
 
+.about-button {
+  margin: 26px;
+}
+
 .personal-pic {
-  pointer-events: none;
-  padding-top: 40px;
+  padding-top: 100px;
   max-width: 450px;
   height: auto;
+}
+
+body.work-page {
+  background-color: var(--background-color);
+}
+
+.previous-project {
+  padding: 100px 50px 30px 50px;
+  font-size: 30px;
+}
+
+.featured-Project {
+  padding: 80px 50px 30px 50px;
+  font-size: 30px;
+}
+
+.hormoz-pic {
+  padding: 4px;
+  border: 2px dashed var(--light-color);
+  width: 450px;
+  height: auto;
+  margin: 5px 50px 10px 50px;
+}
+
+.weather-pic {
+  padding: 4px;
+  border: 2px dashed var(--light-color);
+  width: 435px;
+  height: auto;
+  margin: 40px 50px 10px 50px;
+}
+
+.portfolio-pic {
+  padding: 4px;
+  border: 2px dashed var(--light-color);
+  width: 450px;
+  height: auto;
+  margin: 5px 50px 10px 50px;
+}
+
+figcaption {
+  font-weight: var(--light-weight);
+  font-size: 15px;
+  text-align: center;
+  margin: 5px 0 10px 0;
+  color: var(--light-color);
+}
+
+h6 {
+  color: var(--font-color);
+  padding: 15px 50px 0px 50px;
+}
+
+.work-page p {
+  line-height: 1.8;
+  color: var(--font-color);
+  padding: 8px 45px 20px 45px;
+  font-size: 16px;
+}
+
+.hormoz-button,
+.weather-button,
+.portfolio-button {
+  margin-left: 45px;
 }
 
 @media (max-width: 575.98px) {
@@ -126,6 +202,11 @@ article p {
 
   h2 {
     font-size: 20px;
+  }
+
+  .navbar-logo {
+    height: 14%;
+    width: 14%;
   }
 
   .bold-weight {
@@ -150,48 +231,166 @@ article p {
 
   .personal-pic {
     padding-top: 60px;
-    display: block;
-    margin: 0 auto;
     width: 250px;
     height: auto;
   }
 
   article h2 {
-    margin: 0 18px;
-    padding-top: 20px;
+    padding: 20px 10px 10px;
     font-size: 26px;
   }
 
   article p {
-    margin: 0 18px 15px 18px;
+    padding: 8px 10px;
+    line-height: 1.8;
     font-size: 16px;
   }
-}
 
-body.work-page {
-  background-color: #000;
+  .about-button {
+    margin: 20px 39px 10px;
+  }
+
+  .previous-project {
+    padding: 120px 0 40px;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .featured-Project {
+    padding: 30px 0 20px;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .hormoz-pic {
+    width: 280px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .weather-pic {
+    width: 280px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .portfolio-pic {
+    width: 280px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  figcaption {
+    font-size: 12px;
+    text-align: center;
+    margin: 10px 0 5px 0;
+  }
+
+  h6 {
+    text-align: center;
+  }
+
+  .work-page p {
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 50px 25px 50px;
+  }
+
+  .hormoz-button,
+  .weather-button,
+  .portfolio-button {
+    display: block;
+    margin: -15px auto 20px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .personal-pic {
     padding-top: 60px;
-    display: block;
-    margin: 0 auto;
     width: 350px;
     height: auto;
   }
+
   article h2 {
     margin: 0 18px;
     padding-top: 20px;
     font-size: 26px;
   }
+
   article p {
     margin: 0 18px 15px 18px;
     font-size: 16px;
   }
+
+  .about-button {
+    margin: 15px 20px 20px;
+  }
+
+  .previous-project {
+    padding: 120px 0 40px;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .featured-Project {
+    padding: 30px 0 40px;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .hormoz-pic {
+    width: 360px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .weather-pic {
+    width: 360px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .portfolio-pic {
+    width: 360px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  figcaption {
+    font-size: 13px;
+    text-align: center;
+    margin: 12px 0 12px 0;
+  }
+
+  h6 {
+    margin-top: 2px;
+    text-align: center;
+  }
+
+  .work-page p {
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 80px 30px 80px;
+  }
+
+  .hormoz-button,
+  .weather-button,
+  .portfolio-button {
+    display: block;
+    margin: -25px auto 30px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .navbar-logo {
+    height: 13%;
+    width: 13%;
+  }
   .personal-pic {
     padding-top: 70px;
     display: block;
@@ -208,7 +407,63 @@ body.work-page {
     margin: 0 17px;
     font-size: 16px;
   }
+
   .about-paragraph-bottom {
     margin-bottom: 15px;
+  }
+
+  .about-button {
+    margin: 15px 18px 20px;
+  }
+
+  .previous-project {
+    padding: 100px 0 30px;
+    font-size: 32px;
+  }
+
+  .featured-Project {
+    padding: 50px 0 30px;
+    font-size: 32px;
+  }
+
+  .hormoz-pic {
+    width: 340px;
+    height: auto;
+    margin: 20px 0px 10px 0px;
+  }
+
+  .weather-pic {
+    width: 340px;
+    height: auto;
+    margin: 25px 0px 10px 0px;
+  }
+
+  .portfolio-pic {
+    width: 340px;
+    height: auto;
+    margin: 25px 0px 10px 0px;
+  }
+
+  figcaption {
+    font-size: 13px;
+    text-align: center;
+    margin: 8px 0 12px 0;
+  }
+
+  h6 {
+    padding: 2px 30px 8px 30px;
+  }
+
+  .work-page p {
+    font-size: 15px;
+    padding: 2px 30px 20px 30px;
+    font-size: 16px;
+  }
+
+  .hormoz-button,
+  .weather-button,
+  .portfolio-button {
+    display: block;
+    margin: 5px 30px 10px 30px;
   }
 }
