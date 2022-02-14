@@ -135,8 +135,31 @@ body.work-page {
   background-color: var(--background-color);
 }
 
+.work-page-header {
+  margin-top: 8%;
+  background: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.work-page-h1 {
+  text-align: center;
+  font-size: 32px;
+  font-family: "Lato", sans-serif;
+  padding: 80px 10px;
+}
+
+.work-hr-above {
+  border-top: 2px dashed var(--font-color);
+}
+
+.work-hr-bottom {
+  border-top: 2px dashed var(--font-color);
+}
+
 .previous-project {
-  padding: 100px 50px 30px 50px;
+  padding: 50px 50px 30px 50px;
   font-size: 30px;
 }
 
@@ -250,8 +273,18 @@ h6 {
     margin: 20px 39px 10px;
   }
 
+  .work-page-header {
+    margin-top: 27%;
+  }
+
+  .work-page-h1 {
+    font-size: 20px;
+    padding: 40px 20px;
+    font-weight: var(--bold-weight);
+  }
+
   .previous-project {
-    padding: 120px 0 40px;
+    padding: 35px 0 40px;
     font-size: 22px;
     text-align: center;
   }
@@ -328,8 +361,17 @@ h6 {
     margin: 15px 20px 20px;
   }
 
+  .work-page-header {
+    margin-top: 17%;
+  }
+
+  .work-page-h1 {
+    font-size: 22px;
+    padding: 40px 10px;
+  }
+
   .previous-project {
-    padding: 120px 0 40px;
+    padding: 30px 0 40px;
     font-size: 28px;
     text-align: center;
   }
@@ -416,8 +458,17 @@ h6 {
     margin: 15px 18px 20px;
   }
 
+  .work-page-header {
+    margin-top: 10%;
+  }
+
+  .work-page-h1 {
+    font-size: 22px;
+    padding: 55px 10px;
+  }
+
   .previous-project {
-    padding: 100px 0 30px;
+    padding: 40px 0 30px;
     font-size: 32px;
   }
 
